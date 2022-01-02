@@ -1,0 +1,149 @@
+Date : 2021-12-24 18:29:58
+Directory : c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe
+Total : 83 files,  4448 codes, 234 comments, 501 blanks, all 5183 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |         38 |      2,989 |         54 |        303 |      3,346 |
+| XML        |         18 |        550 |         50 |         12 |        612 |
+| C++        |         11 |        408 |         80 |        132 |        620 |
+| JSON       |          5 |        226 |          4 |          3 |        233 |
+| HTML       |          1 |        102 |         18 |          9 |        129 |
+| Groovy     |          3 |         95 |          3 |         22 |        120 |
+| YAML       |          2 |         45 |         24 |          7 |         76 |
+| Markdown   |          2 |         13 |          0 |          9 |         22 |
+| Swift      |          1 |         12 |          0 |          2 |         14 |
+| Properties |          2 |          8 |          1 |          2 |         11 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                        |         83 |      4,448 |        234 |        501 |      5,183 |
+| android                                                                                                                  |         16 |        218 |         48 |         33 |        299 |
+| android\app                                                                                                              |         12 |        174 |         47 |         22 |        243 |
+| android\app\src                                                                                                          |         10 |         76 |         44 |          9 |        129 |
+| android\app\src\debug                                                                                                    |          1 |          4 |          3 |          1 |          8 |
+| android\app\src\main                                                                                                     |          8 |         68 |         38 |          7 |        113 |
+| android\app\src\main\res                                                                                                 |          7 |         40 |         32 |          6 |         78 |
+| android\app\src\main\res\drawable                                                                                        |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\drawable-v21                                                                                    |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\mipmap-anydpi-v26                                                                               |          2 |         10 |          0 |          0 |         10 |
+| android\app\src\main\res\values                                                                                          |          2 |         13 |          9 |          1 |         23 |
+| android\app\src\main\res\values-night                                                                                    |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\profile                                                                                                  |          1 |          4 |          3 |          1 |          8 |
+| android\gradle                                                                                                           |          1 |          5 |          1 |          1 |          7 |
+| android\gradle\wrapper                                                                                                   |          1 |          5 |          1 |          1 |          7 |
+| assets                                                                                                                   |          6 |        413 |          4 |          1 |        418 |
+| assets\icons                                                                                                             |          6 |        413 |          4 |          1 |        418 |
+| ios                                                                                                                      |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner                                                                                                               |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner\Assets.xcassets                                                                                               |          3 |        148 |          0 |          4 |        152 |
+| ios\Runner\Assets.xcassets\AppIcon.appiconset                                                                            |          1 |        122 |          0 |          1 |        123 |
+| ios\Runner\Assets.xcassets\LaunchImage.imageset                                                                          |          2 |         26 |          0 |          3 |         29 |
+| ios\Runner\Base.lproj                                                                                                    |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                                                      |         37 |      2,975 |         44 |        296 |      3,315 |
+| lib\Controllers                                                                                                          |          6 |        342 |         16 |         71 |        429 |
+| lib\Models                                                                                                               |          2 |         91 |          0 |          9 |        100 |
+| lib\Screens                                                                                                              |         10 |      1,146 |          1 |         85 |      1,232 |
+| lib\Utils                                                                                                                |          3 |         46 |          3 |         17 |         66 |
+| lib\Widgets                                                                                                              |         13 |        878 |          2 |         88 |        968 |
+| test                                                                                                                     |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                                                      |          2 |        137 |         18 |         10 |        165 |
+| windows                                                                                                                  |         10 |        407 |         80 |        131 |        618 |
+| windows\flutter                                                                                                          |          2 |         11 |          9 |         11 |         31 |
+| windows\runner                                                                                                           |          8 |        396 |         71 |        120 |        587 |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                 | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\README.md                                                        | Markdown   |         10 |          0 |          7 |         17 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\analysis_options.yaml                                            | YAML       |          3 |         23 |          4 |         30 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\build.gradle                                         | Groovy     |         59 |          3 |         13 |         75 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\google-services.json                                 | JSON       |         39 |          0 |          0 |         39 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\debug\AndroidManifest.xml                        | XML        |          4 |          3 |          1 |          8 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\AndroidManifest.xml                         | XML        |         28 |          6 |          1 |         35 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\res\drawable-v21\launch_background.xml      | XML        |          4 |          7 |          2 |         13 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\res\drawable\launch_background.xml          | XML        |          4 |          7 |          2 |         13 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml       | XML        |          5 |          0 |          0 |          5 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml | XML        |          5 |          0 |          0 |          5 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\res\values-night\styles.xml                 | XML        |          9 |          9 |          1 |         19 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\res\values\ic_launcher_background.xml       | XML        |          4 |          0 |          0 |          4 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\main\res\values\styles.xml                       | XML        |          9 |          9 |          1 |         19 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\app\src\profile\AndroidManifest.xml                      | XML        |          4 |          3 |          1 |          8 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\build.gradle                                             | Groovy     |         28 |          0 |          5 |         33 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\gradle.properties                                        | Properties |          3 |          0 |          1 |          4 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\gradle\wrapper\gradle-wrapper.properties                 | Properties |          5 |          1 |          1 |          7 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\android\settings.gradle                                          | Groovy     |          8 |          0 |          4 |         12 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\assets\icons\chat.svg                                            | XML        |        134 |          1 |          0 |        135 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\assets\icons\facebook.svg                                        | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\assets\icons\google-plus.svg                                     | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\assets\icons\login.svg                                           | XML        |        151 |          1 |          0 |        152 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\assets\icons\signup.svg                                          | XML        |         80 |          1 |          0 |         81 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\assets\icons\twitter.svg                                         | XML        |         46 |          1 |          1 |         48 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\firebase.json                                                    | JSON       |          7 |          4 |          0 |         11 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\ios\Runner\AppDelegate.swift                                     | Swift      |         12 |          0 |          2 |         14 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json      | JSON       |        122 |          0 |          1 |        123 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json    | JSON       |         23 |          0 |          1 |         24 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md        | Markdown   |          3 |          0 |          2 |          5 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\ios\Runner\Base.lproj\LaunchScreen.storyboard                    | XML        |         36 |          1 |          1 |         38 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\ios\Runner\Base.lproj\Main.storyboard                            | XML        |         25 |          1 |          1 |         27 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\ios\Runner\Runner-Bridging-Header.h                              | C++        |          1 |          0 |          1 |          2 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Controllers\auth_controller.dart                             | Dart       |         91 |         11 |         16 |        118 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Controllers\board_controller.dart                            | Dart       |         84 |          5 |         18 |        107 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Controllers\form_controller.dart                             | Dart       |         11 |          0 |          1 |         12 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Controllers\game_controller.dart                             | Dart       |         57 |          0 |         14 |         71 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Controllers\lobby_controller.dart                            | Dart       |         50 |          0 |         11 |         61 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Controllers\user_controller.dart                             | Dart       |         49 |          0 |         11 |         60 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Models\game.dart                                             | Dart       |         46 |          0 |          4 |         50 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Models\user.dart                                             | Dart       |         45 |          0 |          5 |         50 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\about_screen.dart                                    | Dart       |         86 |          0 |          5 |         91 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\game_screen.dart                                     | Dart       |        141 |          0 |         11 |        152 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\headers.dart                                         | Dart       |         18 |          1 |          4 |         23 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\home_screen.dart                                     | Dart       |        112 |          0 |          7 |        119 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\host_game_scree.dart                                 | Dart       |        109 |          0 |          9 |        118 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\join_game_screen.dart                                | Dart       |        122 |          0 |         10 |        132 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\login_screen.dart                                    | Dart       |        167 |          0 |          8 |        175 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\profile_screen.dart                                  | Dart       |        101 |          0 |          7 |        108 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\signup_screen.dart                                   | Dart       |        153 |          0 |          9 |        162 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Screens\splash_screen.dart                                   | Dart       |        137 |          0 |         15 |        152 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Utils\constants.dart                                         | Dart       |          3 |          0 |          2 |          5 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Utils\random_generator.dart                                  | Dart       |         14 |          0 |          4 |         18 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Utils\storage.dart                                           | Dart       |         29 |          3 |         11 |         43 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\already_have_account.dart                            | Dart       |         33 |          0 |          3 |         36 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\board.dart                                           | Dart       |        193 |          0 |         12 |        205 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\buttons.dart                                         | Dart       |        100 |          1 |         13 |        114 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\cards.dart                                           | Dart       |        182 |          0 |         15 |        197 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\dialogs.dart                                         | Dart       |         27 |          0 |          4 |         31 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\icons.dart                                           | Dart       |         33 |          0 |          6 |         39 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\inputs.dart                                          | Dart       |        110 |          0 |         11 |        121 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\lists.dart                                           | Dart       |         38 |          0 |          4 |         42 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\rounded_button.dart                                  | Dart       |         40 |          0 |          4 |         44 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\rounded_input_field.dart                             | Dart       |         35 |          0 |          3 |         38 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\rounded_password_field.dart                          | Dart       |         38 |          1 |          6 |         45 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\text_field_container.dart                            | Dart       |         23 |          0 |          3 |         26 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\Widgets\texts.dart                                           | Dart       |         26 |          0 |          4 |         30 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\login.dart                                                   | Dart       |        105 |          0 |          8 |        113 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\main.dart                                                    | Dart       |         43 |         22 |          4 |         69 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\lib\signup.dart                                                  | Dart       |        324 |          0 |         14 |        338 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\pubspec.yaml                                                     | YAML       |         42 |          1 |          3 |         46 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\test\widget_test.dart                                            | Dart       |         14 |         10 |          7 |         31 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\web\index.html                                                   | HTML       |        102 |         18 |          9 |        129 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\web\manifest.json                                                | JSON       |         35 |          0 |          1 |         36 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\flutter\generated_plugin_registrant.cc                   | C++        |          6 |          4 |          5 |         15 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\flutter\generated_plugin_registrant.h                    | C++        |          5 |          5 |          6 |         16 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\flutter_window.cpp                                | C++        |         45 |          4 |         13 |         62 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\flutter_window.h                                  | C++        |         20 |          5 |          9 |         34 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\main.cpp                                          | C++        |         30 |          4 |         10 |         44 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\resource.h                                        | C++        |          9 |          6 |          2 |         17 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\utils.cpp                                         | C++        |         53 |          2 |         10 |         65 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\utils.h                                           | C++        |          8 |          6 |          6 |         20 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\win32_window.cpp                                  | C++        |        183 |         15 |         48 |        246 |
+| c:\Users\Chirag Joshi\AndroidStudioProjects\tic_tac_toe\windows\runner\win32_window.h                                    | C++        |         48 |         29 |         22 |         99 |
+| Total                                                                                                                    |            |      4,448 |        234 |        501 |      5,183 |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

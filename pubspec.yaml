@@ -1,0 +1,45 @@
+name: tic_tac_toe
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.0
+  google_sign_in: "^4.5.1"
+  firebase_auth: ^0.18.4
+  firebase_core: ^0.5.3
+  firebase_database: ^4.4.0
+  url_launcher: ^5.7.10
+  get: ^3.26.0
+  confetti: ^0.6.0
+  fluttertoast: ^8.0.8
+  flutter_svg: ^1.0.0
+  get_storage: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/vectors/
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/nunito/Nunito-Regular.ttf
+        - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/nunito/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/nunito/Nunito-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/nunito/Nunito-Black.ttf
+          weight: 900
+        - asset: assets/fonts/nunito/Nunito-Light.ttf
+          weight: 300

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "375630205419",
+    "project_id": "tic-tac-toe-dencoder",
+    "storage_bucket": "tic-tac-toe-dencoder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375630205419:android:cde8c2efe55fcd1e0389ae",
+        "android_client_info": {
+          "package_name": "com.example.tic_tac_toe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375630205419-g3rpqps05l7hgk0r5g938fhp59n95h64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEYraxVOFAAxKuyIdGfKTkqjbxmTn233A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375630205419-g3rpqps05l7hgk0r5g938fhp59n95h64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
