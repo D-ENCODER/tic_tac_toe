@@ -1,9 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tic_tac_toe">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Tic-Tac-Toe"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3212778043779043~8868868757"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -1,4 +1,5 @@
 import 'package:firebase_database/firebase_database.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:tic_tac_toe/Models/user.dart';
 import 'package:tic_tac_toe/Utils/storage.dart';
 
@@ -56,5 +57,29 @@ class UserController {
     }
 
     userRef.update(valueToBeUpdated);
+  }
+
+  Future<void> updateAdCurrency(String uid) async {
+    DatabaseReference userRef =
+        FirebaseDatabase.instance.reference().child('users/$uid');
+    DataSnapshot snapshot = await userRef.once();
+
+    Map<String, dynamic> currencyUpdated = {};
+    currencyUpdated = {'coin': snapshot.value['coin'] + 200};
+    userRef.update(currencyUpdated);
+  }
+
+  Future<void> deductCurrency(String uid, int cost) async {
+    DatabaseReference userRef =
+        FirebaseDatabase.instance.reference().child('users/$uid');
+    DataSnapshot snapshot = await userRef.once();
+
+    Map<String, dynamic> currencyUpdated = {};
+    if (snapshot.value['coin'].toString() == '0') {
+      Fluttertoast.showToast(msg: 'Please earn some money');
+    } else {
+      currencyUpdated = {'coin': snapshot.value['coin'] - cost};
+    }
+    userRef.update(currencyUpdated);
   }
 }

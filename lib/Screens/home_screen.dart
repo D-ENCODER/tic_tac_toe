@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:tic_tac_toe/Controllers/user_controller.dart';
 import 'package:tic_tac_toe/Models/user.dart';
 import 'package:tic_tac_toe/Utils/constants.dart';
+import 'package:tic_tac_toe/Utils/storage.dart';
+import 'package:tic_tac_toe/Widgets/ad_mob.dart';
 import 'package:tic_tac_toe/Widgets/buttons.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,6 +20,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   UserController _userController;
   User _user = User.empty();
+  RewardedAds ads = RewardedAds();
+  final Storage _storage = Storage();
 
   @override
   void initState() {
@@ -33,6 +38,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        bottomNavigationBar: Container(
+          height: 50,
+          child: AdWidget(
+            key: UniqueKey(),
+            ad: AdMobService.createBannerAd()..load(),
+          ),
+        ),
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -96,21 +108,25 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(height: 32.0),
                           Button(
                             text: 'JOIN GAME (100T)',
-                            onPressed: () =>
-                                Navigator.pushNamed(context, 'join_game'),
+                            onPressed: () {
+                              _userController.deductCurrency(
+                                  _storage.getUID(), 100);
+                              Navigator.pushNamed(context, 'join_game');
+                            },
                           ),
                           const SizedBox(height: 24.0),
                           Button(
                             text: 'HOST GAME (200T)',
-                            onPressed: () =>
-                                Navigator.pushNamed(context, 'host_game'),
+                            onPressed: () {
+                              _userController.deductCurrency(
+                                  _storage.getUID(), 200);
+                              Navigator.pushNamed(context, 'host_game');
+                            },
                           ),
                           const SizedBox(height: 24.0),
                           Button(
-                            text: 'Earn (200T)',
-                            onPressed: () =>
-                                Navigator.pushNamed(context, 'about'),
-                          ),
+                              text: 'Earn (200T)',
+                              onPressed: () => ads.loadRewardedAd()),
                           const SizedBox(height: 24.0),
                           Button(
                             text: 'ABOUT',

@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:tic_tac_toe/Utils/constants.dart';
 import 'package:tic_tac_toe/Screens/login_screen.dart';
 import 'package:tic_tac_toe/Screens/about_screen.dart';
@@ -14,28 +15,23 @@ import 'package:tic_tac_toe/Screens/signup_screen.dart';
 import 'package:tic_tac_toe/Screens/splash_screen.dart';
 
 final kTheme = ThemeData(
-  primaryColor: kPrimaryColor,
-  scaffoldBackgroundColor: kPrimaryLightColor,
-  primaryColorDark: const Color(0xff300000),
-  visualDensity: VisualDensity.adaptivePlatformDensity,
-  backgroundColor: Colors.yellow[100],
-  fontFamily: 'Nunito',
-  textTheme: const TextTheme(
-    button: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-    bodyText1: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-    bodyText2: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800),
-    headline1: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w900),
-    headline2: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w800),
-    headline6: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w900),
-    caption: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600),
-  ).apply(
-    bodyColor: const Color(0xff300000),
-    displayColor: const Color(0xff300000),
-  ),
-);
+    primaryColor: kPrimaryColor,
+    scaffoldBackgroundColor: kPrimaryLightColor,
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+    fontFamily: 'Nunito',
+    textTheme: const TextTheme(
+      button: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+      bodyText1: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+      bodyText2: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800),
+      headline1: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w900),
+      headline2: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w800),
+      headline6: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w900),
+      caption: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600),
+    ));
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await MobileAds.instance.initialize();
   await Firebase.initializeApp();
   await GetStorage.init();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])

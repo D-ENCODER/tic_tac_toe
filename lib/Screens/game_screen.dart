@@ -86,13 +86,9 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(0.0),
-        child: AppBar(),
-      ),
-      body: SafeArea(
-        child: ListView(
+    return SafeArea(
+      child: Scaffold(
+        body: ListView(
           children: [
             Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
               Row(

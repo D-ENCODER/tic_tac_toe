@@ -43,13 +43,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0"
-  confetti:
-    dependency: "direct main"
-    description:
-      name: confetti
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.6.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -177,6 +170,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.4.0"
+  google_mobile_ads:
+    dependency: "direct main"
+    description:
+      name: google_mobile_ads
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.13.6"
   google_sign_in:
     dependency: "direct main"
     description:

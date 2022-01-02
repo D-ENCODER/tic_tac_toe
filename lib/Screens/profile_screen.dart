@@ -37,24 +37,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(0.0),
-        child: AppBar(),
-      ),
-      body: SafeArea(
-        child: ListView(
+    return SafeArea(
+      child: Scaffold(
+        body: ListView(
           children: [
             Stack(
               children: [
-                // Positioned(
-                //   top: -1 / 5 * MediaQuery.of(context).size.height,
-                //   left: -1 / 4 * MediaQuery.of(context).size.width,
-                //   child: SizedBox(
-                //     width: 3 / 2 * MediaQuery.of(context).size.width,
-                //     child: Image.asset('assets/vectors/profile_blob.png'),
-                //   ),
-                // ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 4.0),
                   child: Column(
