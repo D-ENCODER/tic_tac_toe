@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:tic_tac_toe/Controllers/user_controller.dart';
 import 'package:tic_tac_toe/Models/user.dart';
@@ -19,8 +21,10 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   UserController _userController;
+  final GetStorage _coinsaver = GetStorage();
   User _user = User.empty();
   RewardedAds ads = RewardedAds();
+  AppOpenAds firstad = AppOpenAds();
   final Storage _storage = Storage();
 
   @override
@@ -31,6 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
       setState(() {
         _user = _userController.user;
       });
+      int coin = _user.coin;
+      _coinsaver.write('coin', coin);
+      firstad.showAd();
     });
   }
 
@@ -51,49 +58,34 @@ class _HomeScreenState extends State<HomeScreen> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        ProfileButton(
-                          onTap: () => Navigator.pushNamed(context, 'profile'),
-                        ),
-                        Text(
-                          'Hi, ${_user.name.toUpperCase()}',
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText2
-                              .copyWith(color: kPrimaryColor),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
                         children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width * 0.1,
-                            child: Image.asset('assets/icons/coin.png'),
+                          ProfileButton(
+                            onTap: () =>
+                                Navigator.pushNamed(context, 'profile'),
                           ),
-                          Text('${_user.coin}' + 'T',
-                              style: const TextStyle(color: kPrimaryColor)),
+                          Text(
+                            'Welcome, ${_user.name.toUpperCase()}',
+                            overflow: TextOverflow.ellipsis,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyText2
+                                .copyWith(color: kPrimaryColor),
+                          ),
                         ],
                       ),
-                    ),
-                  ],
-                ),
+                    ]),
               ),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 32.0),
                 child: Column(
-                  // crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     SizedBox(
                       height: 1 / 8 * MediaQuery.of(context).size.height,
                     ),
                     Container(
-                      // alignment: Alignment.center,
                       margin: const EdgeInsets.symmetric(vertical: 16.0),
                       child: Image.asset(
                         'assets/icons/brand.png',
@@ -109,18 +101,36 @@ class _HomeScreenState extends State<HomeScreen> {
                           Button(
                             text: 'JOIN GAME (100T)',
                             onPressed: () {
-                              _userController.deductCurrency(
-                                  _storage.getUID(), 100);
-                              Navigator.pushNamed(context, 'join_game');
+                              if (_coinsaver.read('coin') >= 100) {
+                                _userController.deductCurrency(
+                                  _storage.getUID(),
+                                  100,
+                                );
+                                int coin = _coinsaver.read('coin');
+                                _coinsaver.write('coin', coin - 100);
+                                Navigator.pushNamed(context, 'join_game');
+                              } else {
+                                Fluttertoast.showToast(
+                                    msg: 'Please earn some money');
+                              }
                             },
                           ),
                           const SizedBox(height: 24.0),
                           Button(
                             text: 'HOST GAME (200T)',
                             onPressed: () {
-                              _userController.deductCurrency(
-                                  _storage.getUID(), 200);
-                              Navigator.pushNamed(context, 'host_game');
+                              if (_coinsaver.read('coin') >= 200) {
+                                _userController.deductCurrency(
+                                  _storage.getUID(),
+                                  200,
+                                );
+                                int coin = _coinsaver.read('coin');
+                                _coinsaver.write('coin', coin - 200);
+                                Navigator.pushNamed(context, 'host_game');
+                              } else {
+                                Fluttertoast.showToast(
+                                    msg: 'Please earn some money');
+                              }
                             },
                           ),
                           const SizedBox(height: 24.0),

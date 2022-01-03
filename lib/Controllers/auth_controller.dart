@@ -1,12 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:tic_tac_toe/Utils/random_generator.dart';
 import 'package:tic_tac_toe/Utils/storage.dart';
 
 class AuthController {
   final Storage _storage = Storage();
+  final GetStorage _coin = GetStorage();
   final RandomGenerator _random = RandomGenerator();
 
   Future<void> registerWithEmailAndPassword(Map credential) async {
@@ -19,7 +21,6 @@ class AuthController {
       if (!user.emailVerified) {
         await user.sendEmailVerification();
       }
-
       usersRef.set({
         'name': credential['name'],
         'nickname': credential['nickname'],

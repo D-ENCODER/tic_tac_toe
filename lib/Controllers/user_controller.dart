@@ -1,4 +1,5 @@
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:tic_tac_toe/Models/user.dart';
 import 'package:tic_tac_toe/Utils/storage.dart';
@@ -6,7 +7,7 @@ import 'package:tic_tac_toe/Utils/storage.dart';
 class UserController {
   User _user = User.empty();
   User get user => _user;
-  Storage _storage = Storage();
+  final Storage _storage = Storage();
 
   Future<void> init() async {
     String uid = _storage.getUID();
@@ -45,8 +46,10 @@ class UserController {
     Map<String, dynamic> valueToBeUpdated = {};
     switch (result) {
       case 'win':
-        valueToBeUpdated = {'win': snapshot.value['win'] + 1};
-        valueToBeUpdated = {'coin': snapshot.value['coin'] + 50};
+        valueToBeUpdated = {
+          'win': snapshot.value['win'] + 1,
+          'coin': snapshot.value['coin'] + 50
+        };
         break;
       case 'lose':
         valueToBeUpdated = {'lose': snapshot.value['lose'] + 1};
@@ -75,11 +78,15 @@ class UserController {
     DataSnapshot snapshot = await userRef.once();
 
     Map<String, dynamic> currencyUpdated = {};
-    if (snapshot.value['coin'].toString() == '0') {
-      Fluttertoast.showToast(msg: 'Please earn some money');
-    } else {
-      currencyUpdated = {'coin': snapshot.value['coin'] - cost};
-    }
+    currencyUpdated = {'coin': snapshot.value['coin'] - cost};
     userRef.update(currencyUpdated);
+  }
+
+  Future<void> getCoin(String uid) async {
+    DatabaseReference userRef =
+        FirebaseDatabase.instance.reference().child('users/$uid');
+    DataSnapshot snapshot = await userRef.once();
+
+    return snapshot.value['coin'];
   }
 }
