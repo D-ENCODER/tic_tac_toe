@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "375630205419",
+    "firebase_url": "https://tic-tac-toe-dencoder-default-rtdb.firebaseio.com",
     "project_id": "tic-tac-toe-dencoder",
     "storage_bucket": "tic-tac-toe-dencoder.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:375630205419:android:cde8c2efe55fcd1e0389ae",
+        "mobilesdk_app_id": "1:375630205419:android:8cb0f0712f697d290389ae",
         "android_client_info": {
-          "package_name": "com.example.tic_tac_toe"
+          "package_name": "com.dencoder.tic_tac_toe"
         }
       },
       "oauth_client": [
@@ -33,6 +34,44 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375630205419:android:cde8c2efe55fcd1e0389ae",
+        "android_client_info": {
+          "package_name": "com.example.tic_tac_toe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375630205419-aub7l65v401rk0etrib4kij6ro1gda3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tic_tac_toe",
+            "certificate_hash": "b0e77a230eca6bc858649211c7c708fa528dd205"
+          }
+        },
+        {
+          "client_id": "375630205419-g3rpqps05l7hgk0r5g938fhp59n95h64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEYraxVOFAAxKuyIdGfKTkqjbxmTn233A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375630205419-g3rpqps05l7hgk0r5g938fhp59n95h64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-3212778043779043~8868868757"
     }
   ],
   "configuration_version": "1"
